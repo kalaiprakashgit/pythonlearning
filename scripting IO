@@ -1,0 +1,234 @@
+1) What package SHOULD you use to interact with external commands from Python?
+
+Correct
+
+Correct answer
+subprocess
+
+Explanation
+All of these packages could be used to interact with external processes, but the subprocess functionality in `os`, `commands`, and `popen2` has all been deprecated (as of Python 2.6) in favor of the `subprocess` module.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/8/module/158
+
+2) Which functions could you use to interact with external commands? (Choose all that apply)
+
+Correct
+
+Correct answer
+subprocess.call, subprocess.check_output
+
+Explanation
+The `exec` command runs a string as though it were Python code, and there is no `run` function. Both `call` and `check_output` from the `subprocess` package will execute external commands.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/8/module/158
+
+3) How would you access the "path" attribute on a Namespace object called "args"?
+
+Correct
+
+Correct answer
+args.path
+
+Explanation
+You can access an attribute from an object in Python by chaining the name of the attribute on the object using a period.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/6/module/158
+
+4) Which keywords are part of the error catching functionality in Python? (Choose all that apply)
+
+Correct
+
+Correct answer
+try, except, else
+
+Explanation
+There is no keyword `catch` in Python. `try`, `except`, and `else` are all part of the error handling process.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/7/module/158
+
+5) Which function would you call to set the status code of your Python script and exit?
+
+Correct
+
+Correct answer
+sys.exit
+
+Explanation
+You exit your script and set the exit status by using the `sys.exit` function.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/9/module/158
+
+6) Which file modes allow you to read file content? (Choose all that apply)
+
+Correct
+
+Correct answer
+'r', 'r+'
+
+Explanation
+The 'r' and 'r+' file modes will allow you to read from a file (if it exists). The 'r+' file mode will also let you write to the file.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/5/module/158
+
+7) How would you call the 'strftime' function if you've imported the entire `time` package?
+
+Incorrect
+
+Correct answer
+time.strftime(...)
+
+Explanation
+When you import an entire package, then you need to prefix your function calls with the package name. You must also use parentheses to call the function; otherwise, you are only referencing it.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/3/module/158
+
+8) What function would you use to read in user input as a string?
+
+Correct
+
+Correct answer
+raw_input
+
+Explanation
+The `raw_input` function will always return a string. The `input` function reads the user input as though it was typed directly into the script.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/1/module/158
+
+9) What function would you use to read in user input as Python code?
+
+Correct
+
+Correct answer
+input
+
+Explanation
+The `raw_input` function will always return a string, but the `input` method treats the input as though it was typed into the Python REPL or directly into your script.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/1/module/158
+
+10) Which of these function calls is valid for this function definition: `def area(length, width, height=1):`? (Choose all that apply)
+
+Correct
+
+Correct answer
+area(1, 2), area(width=2, height=2, length=2), area(2, width=2)
+
+Explanation
+The function call of `area(lenght=2, 2, 2)` is the only invalid answer because you can't use a keyword argument and then follow it with positional arguments. It is valid to use positional arguments followed by keyword arguments. It is also valid to use all keywords or all positional arguments.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/2/module/158
+
+11) What kind of error will you receive if you can't open a file?
+
+Correct
+
+Correct answer
+IOError
+
+Explanation
+When you attempt to `open` a file in Python, you will receive an IOError if you can't read or write to the file.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/7/module/158
+
+12) Which of the following are valid ways to load in additional Python libraries? (Choose all that apply)
+
+Correct
+
+Correct answer
+from time import strftime, localtime, import time
+
+Explanation
+The two ways to import packages are `import PACKAGE_NAME` or `from PACKAGE_NAME import ITEM, ITEM ...`.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/3/module/158
+
+13) What standard library package will you use to access environment variables?
+
+Correct
+
+Correct answer
+os
+
+Explanation
+The `os` package contains the `environ` dictionary of environment variables and the `getenv` function to read environment variables.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/4/module/158
+
+14) What keyword do you use to create a function in Python?
+
+Correct
+
+Correct answer
+def
+
+Explanation
+The `def` keyword is used to "define" a new function.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/2/module/158
+
+15) How do you access a file in Python?
+
+Correct
+
+Correct answer
+open('filename.txt')
+
+Explanation
+The built-in `open` function is all that you need to access a file in Python.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/5/module/158
+
+16) Which of these is a valid list comprehension? (Choose all that apply)
+
+Correct
+
+Correct answer
+[item for item in my_list], [num**2 for num in numbers if num % 2 == 0]
+
+Explanation
+List comprehensions use square brackets so the curly bracket answer can't be right. The answer of `[for item in my_list]` is almost correct, but it's missing a return value at the start.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/10/module/158
+
+17) Which of these packages could be used to access command line arguments? (Choose all that apply)
+
+Incorrect
+
+Correct answer
+sys, argparse
+
+Explanation
+The `sys` package will allow you to get command line arguments from the `sys.args` list. The `argparse` package lets you build robust command line tools that handle position and optional arguments with flags/switches.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/6/module/158
+
+18) How could you get the value of the environment variable "SECRET" in Python? (Choose all that apply)
+
+Correct
+
+Correct answer
+os.environ["SECRET"], os.getenv("SECRET")
+
+Explanation
+To access environment variables you need to use the `os` package, and you'll either select the key from the `os.environ` dictionary or call the `os.getenv` function with the variable name.
+
+Further Reading
+https://linuxacademy.com/cp/courses/lesson/course/1487/lesson/4/module/158
+
